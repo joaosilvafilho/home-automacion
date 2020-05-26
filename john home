@@ -8,7 +8,7 @@
 
 // Replace with your network credentials
 const char* ssid     = "Tecfone";
-const char* password = "TSFMLL**";
+const char* password = "TSFMLL85";
 
 // Set web server port number to 80
 WiFiServer server(80);
