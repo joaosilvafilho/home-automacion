@@ -3,7 +3,7 @@
   Complete project details at https://telescopebetim.com.br
 *********/
 
-// Load Wi-Fi library
+// Load Wi-Fi library 
 #include <WiFi.h>
 
 // Replace with your network credentials
@@ -35,7 +35,7 @@ void setup() {
   // Set outputs to LOW
   digitalWrite(output32, LOW);
   digitalWrite(output27, LOW);
-  digitalWrite(output26, LOW);
+  digitalWrite(output26, LOW);h1Web
   // Connect to Wi-Fi network with SSID and password
   Serial.print("Connecting to ");
   Serial.println(ssid);
@@ -110,7 +110,7 @@ void loop(){
             // Display the HTML web page
             client.println("<!DOCTYPE html><html>");
             client.println("<head><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">");
-            client.println("<link rel=\"icon\" href=\"data:,\">");
+            client.println("<link rel=\"icon\" h1Webhref=\"data:,\">");
             // CSS to style the on/off buttons 
             // Feel free to change the background-color and font-size attributes to fit your preferences
             client.println("<style>html { font-family: Helvetica; display: inline-block; margin: 0px auto; text-align: center;}");
@@ -120,7 +120,8 @@ void loop(){
             
             // Web Page Heading
             client.println("<body><h1>ESP32 JOAO TEO</h1>");
-             client.println("<body><h1Web Server</h2>");
+             client.println("<body><h2>Web Server</h2>");
+             client.println("<body><h2>In Linux</h2>");
             // Display current state, and ON/OFF buttons for GPIO 32  
             client.println("<p>GPIO 32 - Estado " + output32State + "</p>");
             // If the output32State is off, it displays the ON button       
